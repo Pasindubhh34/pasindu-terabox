@@ -16,6 +16,5 @@ def download():
         "download_link": f"https://terabox-downloader.com/fake/{url}"
     })
 
-# Vercel requires this handler
-def handler(event, context):
-    return app(event, context)
+if __name__ == "__main__":
+    app.run(debug=True)
